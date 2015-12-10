@@ -385,12 +385,12 @@ class Spreadsheet_Excel_Writer_Worksheet extends Spreadsheet_Excel_Writer_BIFFwr
     * @param string  $tmp_dir      The path to the directory for temporary files
     * @access private
     */
-    function Spreadsheet_Excel_Writer_Worksheet($BIFF_version, $name,
-                                                $index, &$activesheet,
-                                                &$firstsheet, &$str_total,
-                                                &$str_unique, &$str_table,
-                                                &$url_format, &$parser,
-                                                $tmp_dir)
+    function __construct($BIFF_version, $name,
+                         $index, &$activesheet,
+                         &$firstsheet, &$str_total,
+                         &$str_unique, &$str_table,
+                         &$url_format, &$parser,
+                         $tmp_dir)
     {
         // It needs to call its parent's constructor explicitly
         $this->Spreadsheet_Excel_Writer_BIFFwriter();
